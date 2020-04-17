@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml--> 
+
+<!-- 页面  -->
+<view>{{name}}</view>
+
+<!-- 注册事件 -->
+<view>{{counter}}</view>
+<button size="mini" bindtap="btnTapClick">+</button>
+<button size="mini" bindtap="btnSubClick">-</button>
+
+<!-- 循环问题 -->id
+
+<!-- <view>{{students[0].id}}</view> -->
+
+<view wx:for="{{students}}">{{item.id}}-{{item.name}}-{{item.age}}</view>
